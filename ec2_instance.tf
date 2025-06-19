@@ -8,3 +8,7 @@ resource "aws_instance" "rupal_firstec2" {
         Name = "rupal_secondec2"
     }
 }
+
+output "instance_id"{
+value = aws_instance.rupal_firstec2.id
+}
